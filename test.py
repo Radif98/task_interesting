@@ -318,3 +318,57 @@ if some_by(lambda a: type(a) == int, some_list):
 else:
     print('no')
 '''
+'''Напишите программу, 
+которая на вход принимает два числа A и B, 
+и возводит число А в целую степень B с помощью рекурсии.'''
+
+# def get_exp(number_1, number_2):
+#     if number_2 == 0:
+#         return 1
+#     else:
+#         poww = number_1 * get_exp(number_1, number_2 - 1)
+#         return poww
+#
+#
+# print(get_exp(2, 3))
+
+
+# with open('work with file.txt', 'r', encoding='utf-8') as file:
+# text = file.read().splitlines()
+# print(text)
+
+# while True:
+#     line = file.readline()
+#     if not line:
+#         break
+#     print(line)
+
+# with open('filetest.txt', 'a', encoding='utf-8') as file:
+#     some_list = ['привет', 'пока']
+#     for word in some_list:
+#         file.write(word + '\n')
+
+# with open('some_file.txt', 'w', encoding='utf-8') as file:
+#     some_list = [input('write - ') for _ in range(5)]
+#     for word in some_list:
+#         file.write(word)
+#
+# with open('some_file.txt', 'r', encoding='utf-8') as file:
+#     text = file.read()
+#     print(text.count(input('write_find - ')))
+
+
+# from random import randint
+#
+# n = int(input('Введите кол-во элементов в списке: '))
+# some_list = [randint(-n, n) for _ in range(n)]
+# print(some_list)
+# with open('some_file.txt', 'w', encoding='utf-8') as file:
+#     for _ in range(randint(1, n)):
+#         file.write(str(randint(0, n - 1)) + '\n')
+#
+# with open('some_file.txt', 'r', encoding='utf-8') as file:
+#     mult = 1
+#     for ind in file.read().splitlines():
+#         mult *= some_list[int(ind)]
+# print(mult)
